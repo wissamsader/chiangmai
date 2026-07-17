@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Uma House — a leafy garden homestay by Baan Kang Wat, Chiang Mai</title>
+<meta name="description" content="Uma House (Uma Resort) — a green, treehouse-calm homestay with a pool, wooden walkways and blue teak rooms, next to Baan Kang Wat art village and Wat Ram Poeng in Chiang Mai. 4.8★ on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1E3A2B; --forest2:#152A20; --moss:#4E6B4A; --leaf:#7FA36E; --teak:#B07B4B;
+  --bone:#F1EEE4; --bone2:#E7E2D3; --ink:#14201A; --ink2:#42513F; --mut:#8A907E; --line:#DDD8C7;
+}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{background:var(--bone);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:clamp(20px,5vw,56px)}
+.disp{font-family:'Cormorant Garamond',serif}
+.rev{opacity:0;transform:translateY(28px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.rev.on{opacity:1;transform:none}
+.k{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);font-weight:600}
+
+/* ---- immersive dark-green hero ---- */
+header{position:relative;min-height:clamp(640px,96svh,880px);max-height:920px;display:flex;align-items:flex-end;overflow:hidden;color:var(--bone);background:var(--forest2)}
+header .bg{position:absolute;inset:0;background:url('photos/02.jpg') center 46%/cover no-repeat}
+header .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,42,32,.42),rgba(21,42,32,.20) 34%,rgba(21,42,32,.62) 72%,rgba(15,25,18,.94) 100%)}
+header .in{position:relative;z-index:2;width:100%;padding:0 clamp(20px,5vw,56px) clamp(40px,6vw,66px)}
+header .badge{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:#DCE8D6;border:1px solid rgba(241,238,228,.28);border-radius:30px;padding:7px 15px;margin-bottom:22px}
+header h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(3.6rem,12vw,8.2rem);line-height:.9;letter-spacing:.01em}
+header h1 .leaf{position:relative;display:inline-block}
+/* leaf-sway living ornament */
+header h1 .leaf::after{content:"";position:absolute;right:-.42em;top:.14em;width:.30em;height:.30em;
+  background:radial-gradient(circle at 30% 30%,var(--leaf),var(--moss));border-radius:0 60% 0 60%;transform-origin:0 100%;
+  animation:sway 14s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(6deg)}}
+@media(prefers-reduced-motion:reduce){header h1 .leaf::after{animation:none}}
+header .sub{max-width:38ch;margin-top:22px;font-size:clamp(15px,1.7vw,18.5px);color:#DDE6D6}
+header .meta{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13.5px;color:#C4D2BC}
+header .meta b{color:var(--bone);font-weight:600}
+
+/* ---- intro ---- */
+.intro{padding:clamp(60px,8vw,110px) 0 clamp(44px,6vw,80px);display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,64px);align-items:center}
+.intro .ph{border-radius:10px;overflow:hidden;box-shadow:0 30px 56px -34px rgba(20,32,26,.6)}
+.intro .ph img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.08;margin:12px 0 18px;font-weight:600}
+.intro p{color:var(--ink2);margin-bottom:15px;max-width:46ch}
+@media(max-width:820px){.intro{grid-template-columns:1fr}.intro .ph{order:-1}}
+
+/* ---- three levels of green ---- */
+.levels{margin-bottom:clamp(20px,3vw,40px)}
+.level{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,54px);align-items:center;padding:clamp(30px,4vw,52px) 0}
+.level:nth-child(even) .txt{order:2}
+.level .ph{border-radius:10px;overflow:hidden;box-shadow:0 26px 50px -34px rgba(20,32,26,.55)}
+.level .ph img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.level .num{font-family:'Cormorant Garamond',serif;font-size:3.2rem;color:var(--leaf);line-height:1;font-weight:600}
+.level h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,3.4vw,2.5rem);margin:6px 0 14px;font-weight:600}
+.level p{color:var(--ink2);max-width:42ch}
+@media(max-width:820px){.level{grid-template-columns:1fr}.level:nth-child(even) .txt{order:0}.level .ph{order:-1}}
+
+/* ---- what's here grid ---- */
+.here{background:var(--forest);color:var(--bone);border-radius:14px;padding:clamp(38px,5vw,64px) clamp(24px,4vw,54px);margin:clamp(40px,6vw,80px) 0}
+.here .k{color:var(--leaf)}
+.here h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.4vw,2.6rem);margin:10px 0 28px;font-weight:600}
+.here .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(241,238,228,.16);border-radius:9px;overflow:hidden}
+.here .c{background:var(--forest);padding:24px 22px}
+.here .c svg{width:24px;height:24px;color:var(--leaf);margin-bottom:12px}
+.here .c b{font-family:'Cormorant Garamond',serif;font-size:1.35rem;display:block;margin-bottom:4px;font-weight:600}
+.here .c span{font-size:14px;color:#C4D2BC}
+@media(max-width:760px){.here .grid{grid-template-columns:1fr 1fr}}
+@media(max-width:440px){.here .grid{grid-template-columns:1fr}}
+
+/* ---- gallery ---- */
+.gal{margin-bottom:clamp(48px,7vw,90px)}
+.gal h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:22px;font-weight:600}
+.gal .grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:128px;gap:10px}
+.gal .grid img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.gal .a{grid-column:span 3;grid-row:span 2}
+.gal .b{grid-column:span 3}
+.gal .c{grid-column:span 3}
+.gal .d{grid-column:span 2;grid-row:span 2}
+.gal .e{grid-column:span 2}
+.gal .f{grid-column:span 2}
+@media(max-width:760px){.gal .grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px}.gal .a,.gal .b,.gal .c,.gal .d,.gal .e,.gal .f{grid-column:span 1;grid-row:span 1}.gal .a{grid-column:span 2}}
+
+/* ---- near ---- */
+.near{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,60px);margin-bottom:clamp(50px,7vw,96px)}
+.near h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:16px;font-weight:600}
+.near .list{list-style:none}
+.near .list li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.near .list li span:first-child{color:var(--ink2)}
+.near .list li b{color:var(--ink);font-weight:600;white-space:nowrap}
+.near .addr{background:var(--bone2);border-radius:12px;padding:26px 24px;align-self:start}
+.near .addr b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.3rem;margin-bottom:8px}
+.near .addr p{color:var(--ink2);font-size:14.5px;margin-bottom:16px}
+.near .addr a{display:inline-block;background:var(--forest);color:var(--bone);padding:11px 20px;border-radius:30px;font-size:13px;font-weight:600}
+@media(max-width:760px){.near{grid-template-columns:1fr}}
+
+/* ---- reviews ---- */
+.revsec{margin-bottom:clamp(56px,8vw,110px)}
+.revsec .head{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin-bottom:26px;flex-wrap:wrap}
+.revsec h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:600}
+.revsec .score{font-size:13.5px;color:var(--mut)}
+.revsec .score b{color:var(--ink);font-size:1.05rem}
+.revsec .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.revsec blockquote{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px 24px;font-size:15.5px;color:var(--ink2);line-height:1.56;box-shadow:0 18px 38px -30px rgba(20,32,26,.5)}
+.revsec .stars{color:var(--teak);letter-spacing:2px;margin-bottom:12px}
+.revsec cite{display:block;margin-top:16px;font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+@media(max-width:860px){.revsec .grid{grid-template-columns:1fr}}
+
+.foot{border-top:1px solid var(--line);padding:40px 0 118px;color:var(--mut);font-size:13px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.foot a{color:var(--moss)}
+
+/* ---- unique sticky bar: wooden deck ---- */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;background:var(--teak);
+  padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -12px 30px -20px rgba(20,32,26,.5)}
+.bar::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  background:repeating-linear-gradient(90deg,rgba(0,0,0,.16) 0 22px,rgba(255,255,255,.10) 22px 24px)}
+.bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 8px;font-size:13.5px;font-weight:600;color:#fff5ea;border-left:1px solid rgba(0,0,0,.14)}
+.bar a:first-child{border-left:none}
+.bar a.call{background:var(--forest)}
+.bar a svg{width:17px;height:17px}
+@media(max-width:420px){.bar a{font-size:12.5px;padding:14px 4px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bg"></div>
+  <div class="in">
+    <span class="badge">★ 4.8 on Google · Suthep, Chiang Mai</span>
+    <h1 class="disp">Uma <span class="leaf">House</span></h1>
+    <p class="sub">A green house in the trees — wooden walkways, a quiet pool, and blue teak rooms next to Chiang Mai's art village.</p>
+    <div class="meta">
+      <span>★ <b>4.8</b> · 48 Google reviews</span>
+      <span>By <b>Baan Kang Wat</b> &amp; Wat Ram Poeng</span>
+      <span><b>Pool</b> · kitchen · nature all around</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="intro">
+    <div class="ph rev"><img src="photos/01.jpg" alt="Blue-walled teak room with carved headboard at Uma House"></div>
+    <div class="rev">
+      <div class="k">The house</div>
+      <h2>A house you disappear into the green of</h2>
+      <p>Uma House sits low under the canopy in Suthep, reached by wooden walkways that thread through a dense, living garden. The rooms are teak and calm — deep blue walls, bamboo ceilings, carved headboards — the kind of quiet you feel in your shoulders.</p>
+      <p>There's a pool under the trees, a shared kitchen, and birds instead of traffic. It's a five-minute walk to Baan Kang Wat art village and the meditation temple at Wat Ram Poeng — which is why so many "one week" stays quietly become three.</p>
+    </div>
+  </section>
+
+  <section class="levels">
+    <div class="level rev">
+      <div class="txt"><div class="num disp">01</div><h3 class="disp">The garden floor</h3><p>A pool set into the greenery, loungers in the dapple, and a garden that does most of the talking. Cool water after a hot day of temples.</p></div>
+      <div class="ph"><img src="photos/03.jpg" alt="Swimming pool surrounded by greenery at Uma House"></div>
+    </div>
+    <div class="level rev">
+      <div class="txt"><div class="num disp">02</div><h3 class="disp">The walkways</h3><p>Raised wooden decks carry you between the rooms through the trees — the reason people call it a treehouse. Slow down; the house wants you to.</p></div>
+      <div class="ph"><img src="photos/05.jpg" alt="Green garden and wooden buildings at Uma House"></div>
+    </div>
+    <div class="level rev">
+      <div class="txt"><div class="num disp">03</div><h3 class="disp">The rooms</h3><p>Blue teak rooms with air-conditioning, hot showers and real quiet. Clean, characterful, and cool even at midday under the canopy.</p></div>
+      <div class="ph"><img src="photos/01.jpg" alt="Teak room interior at Uma House"></div>
+    </div>
+  </section>
+
+  <section class="here rev">
+    <div class="k">What's here</div>
+    <h2 class="disp">Everything you need to stay a while</h2>
+    <div class="grid">
+      <div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h16M6 12a6 6 0 0112 0M4 16h16"/></svg><b>Pool in the trees</b><span>Clean, quiet, dappled shade.</span></div>
+      <div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 21V8l7-4 7 4v13M9 21v-6h6v6"/></svg><b>Shared kitchen</b><span>Fridge, laundry, all handy.</span></div>
+      <div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 8h16M8 12h8M4 16h16"/></svg><b>Homemade breakfast</b><span>Slow mornings, done right.</span></div>
+      <div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 8l9-5 9 5-9 5-9-5zM3 12l9 5 9-5"/></svg><b>Air-con teak rooms</b><span>Cool, clean, characterful.</span></div>
+      <div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 13a7 7 0 0114 0M8.5 16a3.5 3.5 0 017 0M12 19h.01"/></svg><b>Fast free Wi-Fi</b><span>Work from the canopy.</span></div>
+      <div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3c3 4 5 7 5 10a5 5 0 01-10 0c0-3 2-6 5-10z"/></svg><b>Nature all around</b><span>Birdsong instead of traffic.</span></div>
+    </div>
+  </section>
+
+  <section class="gal">
+    <h2 class="disp">A look around</h2>
+    <div class="grid rev">
+      <img class="a" src="photos/02.jpg" alt="Wooden walkway through the garden at Uma House">
+      <img class="b" src="photos/03.jpg" alt="Pool at Uma House">
+      <img class="c" src="photos/01.jpg" alt="Blue teak room">
+      <img class="d" src="photos/04.jpg" alt="Breakfast spread">
+      <img class="e" src="photos/05.jpg" alt="Garden greenery">
+      <img class="f" src="photos/06.jpg" alt="Rustic bathroom">
+    </div>
+  </section>
+
+  <section class="near">
+    <div class="rev">
+      <h2 class="disp">The neighbourhood</h2>
+      <ul class="list">
+        <li><span>Baan Kang Wat art village</span><b>5 min walk</b></li>
+        <li><span>Wat Ram Poeng meditation temple</span><b>6 min walk</b></li>
+        <li><span>Nimman cafés &amp; galleries</span><b>10 min ride</b></li>
+        <li><span>Chiang Mai old city</span><b>15 min ride</b></li>
+        <li><span>Chiang Mai airport</span><b>15 min drive</b></li>
+      </ul>
+    </div>
+    <div class="addr rev">
+      <b class="disp">Find the green gate</b>
+      <p>105/7 Moo 5, Suthep, Mueang Chiang Mai 50200<br>(a lane off the Baan Kang Wat road)</p>
+      <a href="https://www.google.com/maps?cid=8151127673503720491" target="_blank" rel="noopener">Open in Google Maps →</a>
+    </div>
+  </section>
+
+  <section class="revsec">
+    <div class="head">
+      <h2 class="disp">Guests who came for a night, stayed a week</h2>
+      <span class="score">★ <b>4.8</b> from 48 Google reviews</span>
+    </div>
+    <div class="grid">
+      <blockquote class="rev"><div class="stars">★★★★★</div>“We stayed a week, extended twice, and ended up staying three weeks. A wonderful place — tranquil, comfortable, birds and nature all around.”<cite>— Google review</cite></blockquote>
+      <blockquote class="rev"><div class="stars">★★★★★</div>“Great rooms and a majestic view, the forest really near. Eco-friendly and next to a big artist market.”<cite>— Novia</cite></blockquote>
+      <blockquote class="rev"><div class="stars">★★★★★</div>“Comfortable, clean and comfy — kitchen, fridge, laundry and pool, all clean and handy. All you need to relax.”<cite>— Google review</cite></blockquote>
+    </div>
+  </section>
+
+  <div class="foot">
+    <span>Uma House · Uma Resort · Suthep, Chiang Mai 50200</span>
+    <span>Private preview · <a href="https://www.facebook.com/umaumaumabear" target="_blank" rel="noopener">Facebook</a></span>
+  </div>
+
+</div>
+
+<nav class="bar" aria-label="Contact">
+  <a class="call" href="tel:+66854911503"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0 8 7 15 15 15l2-3-4-2-2 2c-3-1-6-4-7-7l2-2-2-4z" stroke-linejoin="round"/></svg>Call / LINE</a>
+  <a href="https://www.google.com/maps?cid=8151127673503720491" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Map</a>
+  <a href="https://www.facebook.com/umaumaumabear" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h2.7l.4-3H13V9.1c0-.9.3-1.5 1.6-1.5H16V5c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.4-3.8 3.9V11H7.5v3H10v8h3z"/></svg>Facebook</a>
+</nav>
+
+<script>
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.rev'));
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+  setTimeout(function(){els.forEach(function(e){e.classList.add('on')})},1100);
+})();
+</script>
+</body>
+</html>
