@@ -4,192 +4,229 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Pai Yan Noi Guest Home — ไปยาลน้อย · a teak house by Wat Umong, Chiang Mai</title>
+<title>Pai Yan Noi Guest Home — ไปยาลน้อย · a teak house by Wat Umong · Chiang Mai</title>
 <meta name="description" content="A small teak guest home with a garden, steps from Wat Umong forest temple in Chiang Mai. Quiet, rustic, run by two sisters. 4.8★ on Google.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Serif+Thai:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Noto+Serif+Thai:wght@500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F4F1EA; --paper2:#EDE9DF; --ink:#161616; --ink2:#3A3A38;
-  --blue:#3E6E8E; --blue2:#2E5670; --clay:#B98A6A; --line:#DCD6C8; --mut:#7C766A;
+  --paper:#F3F0E8; --paper2:#EAE6DA; --ink:#141414; --ink2:#3A3A38; --blue:#356183; --blue2:#274B66;
+  --clay:#B98A6A; --line:#DAD4C6; --mut:#7C7668; --ease:cubic-bezier(.22,.61,.24,1);
 }
 *{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
-html{scroll-behavior:smooth}
-html,body{overflow-x:clip}
+html{scroll-behavior:smooth}html,body{overflow-x:clip}
 body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(20px,5vw,56px)}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:clamp(22px,5vw,64px)}
 .th{font-family:'Noto Serif Thai',serif}
-.rev{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
-.rev.on{opacity:1;transform:none}
+.mono{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+.grain{position:fixed;inset:-120%;z-index:2;pointer-events:none;opacity:.045;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1.1s steps(3) infinite}
+@keyframes grain{0%{transform:translate(0,0)}33%{transform:translate(-4%,3%)}66%{transform:translate(3%,-3%)}100%{transform:translate(0,0)}}
+@media(prefers-reduced-motion:reduce){.grain{animation:none}}
+.rev{opacity:0;transform:translateY(30px);transition:opacity 1s var(--ease),transform 1s var(--ease)}.rev.on{opacity:1;transform:none}
+.clip{overflow:hidden}.clip img{clip-path:inset(0 0 100% 0);transform:scale(1.12);transition:clip-path 1.2s var(--ease),transform 1.5s var(--ease)}.clip.on img{clip-path:inset(0 0 0% 0);transform:scale(1)}
+.stag>*{opacity:0;transform:translateY(18px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.stag.on>*{opacity:1;transform:none}
+.stag.on>*:nth-child(2){transition-delay:.08s}.stag.on>*:nth-child(3){transition-delay:.16s}.stag.on>*:nth-child(4){transition-delay:.24s}
 
-/* ---- ellipsis living ornament (ไปยาลน้อย = the Thai "…" mark) ---- */
-.dots{display:inline-flex;gap:.18em;vertical-align:.06em;margin-left:.14em}
-.dots i{width:.16em;height:.16em;border-radius:50%;background:var(--blue);display:block;opacity:.25}
+/* ellipsis living ornament = the name */
+.dots{display:inline-flex;gap:.16em;vertical-align:.08em;margin-left:.12em}
+.dots i{width:.15em;height:.15em;border-radius:50%;background:var(--blue);display:block;opacity:.25}
 @keyframes dotseq{0%,60%,100%{opacity:.22}30%{opacity:1}}
-.dots i:nth-child(1){animation:dotseq 2.6s ease-in-out infinite}
-.dots i:nth-child(2){animation:dotseq 2.6s ease-in-out .3s infinite}
-.dots i:nth-child(3){animation:dotseq 2.6s ease-in-out .6s infinite}
-@media(prefers-reduced-motion:reduce){.dots i{animation:none!important;opacity:.5}}
+.dots i:nth-child(1){animation:dotseq 2.6s ease-in-out infinite}.dots i:nth-child(2){animation:dotseq 2.6s ease-in-out .3s infinite}.dots i:nth-child(3){animation:dotseq 2.6s ease-in-out .6s infinite}
+@media(prefers-reduced-motion:reduce){.dots i{animation:none;opacity:.5}}
 
-/* ---- top ---- */
-.top{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;
-  padding:22px clamp(20px,5vw,56px);color:var(--paper)}
-.top .mk{font-weight:600;letter-spacing:.02em;font-size:15px}
-.top .r{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.hd{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:20px clamp(22px,5vw,64px);transition:background .4s,padding .4s,color .4s;color:var(--paper);text-shadow:0 1px 18px rgba(10,10,10,.55)}
+.hd.solid{background:rgba(243,240,232,.94);backdrop-filter:blur(10px);color:var(--ink);text-shadow:none;padding-block:14px;border-bottom:1px solid var(--line)}
+.hd .mk{font-weight:600;font-size:16px;letter-spacing:.01em}
+.hd nav{display:flex;gap:24px;align-items:center}.hd nav a{font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.hd .resv{border:1px solid currentColor;border-radius:30px;padding:8px 18px}.hd.solid .resv{border-color:var(--blue)}
+@media(max-width:680px){.hd nav a:not(.resv){display:none}}
 
-/* ---- split hero ---- */
-.hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:100svh}
-.hero .panel{background:var(--ink);color:var(--paper);display:flex;flex-direction:column;justify-content:center;
-  padding:clamp(40px,6vw,90px) clamp(24px,5vw,70px)}
-.hero .eye{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:#B9C7D1;margin-bottom:26px}
-.hero h1{font-weight:700;font-size:clamp(3.1rem,8.4vw,6.6rem);line-height:.92;letter-spacing:-.02em;text-transform:lowercase}
-.hero h1 .th{display:block;font-size:.42em;letter-spacing:0;color:#C9B79F;margin-top:.35em;text-transform:none;font-weight:500}
-.hero .sub{margin-top:30px;max-width:34ch;color:#CFCABE;font-size:clamp(15px,1.6vw,17.5px)}
-.hero .meta{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13px;color:#A9A499;letter-spacing:.02em}
-.hero .meta b{color:var(--paper);font-weight:600}
-.hero .cta{margin-top:34px;display:flex;gap:12px;flex-wrap:wrap}
-.hero .cta a{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;padding:13px 22px;border-radius:2px;font-weight:600}
-.hero .cta .p{background:var(--paper);color:var(--ink)}
-.hero .cta .g{border:1px solid rgba(255,255,255,.34);color:var(--paper)}
-.hero .shot{position:relative;overflow:hidden;background:#20242a}
-.hero .shot img{width:100%;height:100%;object-fit:cover;object-position:center}
-.hero .shot::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,22,22,.28),transparent 30%)}
-@media(max-width:860px){
-  .hero{grid-template-columns:1fr;min-height:auto}
-  .hero .shot{min-height:56vh;order:-1}
-  .hero .panel{padding-block:clamp(46px,12vw,64px)}
-  .top{color:var(--paper)}
-}
+header{position:relative;height:100svh;min-height:600px;max-height:940px;overflow:hidden;color:var(--paper);display:flex;align-items:flex-end}
+header .bg{position:absolute;inset:0}header .bg img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.04)}
+header .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,15,15,.42),rgba(15,15,15,.12) 34%,rgba(15,15,15,.5) 72%,rgba(10,10,10,.92))}
+header .in{position:relative;z-index:3;width:100%;padding:0 clamp(22px,5vw,64px) clamp(44px,6vw,72px)}
+header .kick{display:flex;align-items:center;gap:14px;color:#AEC6D6;margin-bottom:18px}header .kick .ln{width:42px;height:1px;background:#AEC6D6;opacity:.7}
+header h1{font-weight:700;font-size:clamp(3.2rem,12vw,8.4rem);line-height:.9;letter-spacing:-.02em;text-transform:lowercase}
+header h1 .th{display:block;font-size:.24em;letter-spacing:0;color:#C9B79F;margin-top:.3em;text-transform:none;font-weight:500}
+header .foot{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-top:24px;flex-wrap:wrap}
+header .foot p{max-width:34ch;color:#D9D5C9;font-size:clamp(15px,1.7vw,18px)}
+header .foot .rate{text-align:right;white-space:nowrap}header .foot .rate b{font-size:1.8rem;font-weight:700}
+header .scroll{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:3;color:var(--paper);opacity:.7;font-size:10px;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px}
+header .scroll::after{content:"";width:1px;height:34px;background:currentColor;animation:sd 2.2s var(--ease) infinite}
+@keyframes sd{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
-/* ---- statement ---- */
-.state{padding:clamp(64px,9vw,120px) 0}
-.state p{font-size:clamp(1.6rem,4.2vw,3rem);line-height:1.18;font-weight:500;letter-spacing:-.01em;max-width:20ch}
-.state .u{color:var(--blue)}
+.lab{display:flex;align-items:center;gap:14px;color:var(--blue);margin-bottom:22px}.lab .ln{width:36px;height:1px;background:var(--blue);opacity:.5}
 
-/* ---- story + rooms ---- */
-.story{padding-bottom:clamp(50px,7vw,96px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,64px);align-items:start}
-.story .k{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);font-weight:600;margin-bottom:14px}
-.story h2{font-size:clamp(1.5rem,3vw,2.15rem);line-height:1.14;font-weight:600;margin-bottom:18px;letter-spacing:-.01em}
-.story p{color:var(--ink2);margin-bottom:16px;max-width:46ch}
-.rooms{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.rooms figure{margin:0;position:relative;overflow:hidden;border-radius:3px;background:var(--paper2)}
-.rooms img{width:100%;aspect-ratio:4/5;object-fit:cover}
-.rooms figcaption{position:absolute;left:0;bottom:0;right:0;padding:22px 16px 12px;color:#fff;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
-  background:linear-gradient(transparent,rgba(0,0,0,.55))}
-@media(max-width:860px){.story{grid-template-columns:1fr}}
+.intro{padding:clamp(80px,11vw,150px) 0 clamp(50px,7vw,90px)}
+.intro .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,6vw,84px);align-items:end}
+.intro h2{font-size:clamp(1.9rem,4.4vw,3.1rem);line-height:1.1;font-weight:600;letter-spacing:-.01em}
+.intro h2 em{font-style:normal;color:var(--blue)}
+.intro .col p{color:var(--ink2);margin-bottom:16px;max-width:46ch}
+.intro .fig{margin-top:34px}.intro .fig img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px}.intro .fig figcaption{margin-top:12px;color:var(--mut)}
+@media(max-width:860px){.intro .grid{grid-template-columns:1fr;gap:34px}}
 
-/* ---- & everything else (ฯลฯ) ---- */
-.etc{background:var(--ink);color:var(--paper);border-radius:6px;padding:clamp(38px,6vw,72px) clamp(26px,5vw,64px);margin-bottom:clamp(50px,7vw,96px)}
-.etc .k{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#B9C7D1;margin-bottom:18px}
-.etc p{font-size:clamp(1.3rem,3.2vw,2.2rem);line-height:1.35;font-weight:500;max-width:26ch}
-.etc .list{color:#CFCABE}
-.etc b{color:var(--paper);font-weight:600}
+/* forest temple band */
+.temple{position:relative;overflow:hidden;color:var(--paper);border-radius:2px;margin-bottom:clamp(50px,7vw,96px)}
+.temple .bg img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.temple .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,20,18,.82),rgba(15,20,18,.32) 62%,transparent)}
+.temple .in{position:relative;z-index:2;padding:clamp(56px,8vw,110px) clamp(28px,5vw,64px);max-width:640px}
+.temple .mono{color:#AEC6D6;margin-bottom:16px;display:block}
+.temple h2{font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.12;font-weight:600;margin-bottom:16px;letter-spacing:-.01em}
+.temple p{color:#D9D5C9;max-width:44ch}
 
-/* ---- hosts / two sisters ---- */
-.hosts{padding:clamp(20px,3vw,44px) 0 clamp(60px,8vw,110px)}
-.hosts .k{margin-bottom:20px}
-.hosts .lead{font-size:clamp(1.5rem,3.6vw,2.5rem);line-height:1.24;font-weight:500;letter-spacing:-.01em;max-width:24ch}
-.hosts .lead em{font-style:italic;color:var(--blue)}
-.hosts .note{margin-top:26px;color:var(--ink2);font-size:15.5px;max-width:52ch}
+/* rooms */
+.rooms{padding-bottom:clamp(50px,7vw,96px)}
+.rooms .lab{margin-bottom:24px}
+.rooms .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.rooms figure{margin:0;overflow:hidden;border-radius:2px}
+.rooms .clip img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.rooms figcaption{margin-top:12px}
+.rooms figcaption b{display:block;font-weight:600;font-size:1.05rem}
+.rooms figcaption span{color:var(--mut);font-size:13.5px}
+@media(max-width:760px){.rooms .grid{grid-template-columns:1fr}}
 
-/* ---- near ---- */
+/* everything else */
+.etc{background:var(--ink);color:var(--paper);border-radius:2px;padding:clamp(48px,7vw,90px) clamp(28px,5vw,72px);margin-bottom:clamp(50px,7vw,96px)}
+.etc .lab{color:#AEC6D6}.etc .lab .ln{background:#AEC6D6}
+.etc h2{font-size:clamp(1.6rem,3.6vw,2.6rem);line-height:1.28;font-weight:500;max-width:26ch}
+.etc h2 b{color:var(--paper)}.etc h2 .th{color:var(--clay)}
+.etc .grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:36px}
+.etc .c{padding:22px 22px 22px 0;border-top:1px solid rgba(243,240,232,.16)}
+.etc .c .mono{color:#AEC6D6;margin-bottom:10px;display:block}
+.etc .c b{font-size:1.1rem;font-weight:600;display:block;margin-bottom:4px}
+.etc .c span{font-size:14px;color:#B7B3A6}
+@media(max-width:680px){.etc .grid{grid-template-columns:1fr 1fr}}@media(max-width:440px){.etc .grid{grid-template-columns:1fr}}
+
+/* sisters */
+.sisters{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,80px);padding-bottom:clamp(50px,7vw,96px);align-items:center}
+.sisters .fig{overflow:hidden;border-radius:2px}.sisters .clip img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.sisters h2{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.1;font-weight:600;letter-spacing:-.01em;margin-bottom:18px}
+.sisters p{color:var(--ink2);margin-bottom:15px;max-width:44ch}
+@media(max-width:760px){.sisters{grid-template-columns:1fr}}
+
+/* near */
 .near{padding-bottom:clamp(50px,7vw,96px)}
-.near h2{font-size:clamp(1.5rem,3vw,2.15rem);font-weight:600;margin-bottom:24px;letter-spacing:-.01em}
-.near .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
-.near .c{background:var(--paper);padding:22px 18px}
-.near .c b{display:block;font-size:1.15rem;font-weight:600;margin-bottom:3px}
+.near h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:22px;font-weight:600;letter-spacing:-.01em}
+.near .grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.near .c{padding:24px 18px 24px 0;border-bottom:1px solid var(--line)}
+.near .c b{font-size:1.5rem;display:block;font-weight:600;margin-bottom:2px}
 .near .c span{font-size:13px;color:var(--mut)}
-@media(max-width:760px){.near .grid{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.near .grid{grid-template-columns:1fr 1fr}}
 
-/* ---- reviews ---- */
-.revs{padding-bottom:clamp(56px,8vw,110px)}
-.revs .top-row{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:30px;flex-wrap:wrap}
-.revs h2{font-size:clamp(1.5rem,3vw,2.15rem);font-weight:600;letter-spacing:-.01em}
-.revs .score{font-size:13px;color:var(--mut);letter-spacing:.04em}
-.revs .score b{color:var(--ink);font-size:1.05rem}
-.revs .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.revs blockquote{margin:0;background:var(--paper2);border:1px solid var(--line);border-radius:5px;padding:26px 24px;font-size:15.5px;color:var(--ink2);line-height:1.55}
-.revs .stars{color:var(--clay);letter-spacing:2px;font-size:13px;margin-bottom:12px}
-.revs cite{display:block;margin-top:16px;font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
-@media(max-width:860px){.revs .grid{grid-template-columns:1fr}}
+/* reviews */
+.revs{padding-bottom:clamp(60px,8vw,110px)}
+.revs .head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:16px;margin-bottom:40px}
+.revs h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:600;letter-spacing:-.01em}
+.revs .score .mono{color:var(--mut)}
+.revs .list{display:grid;gap:clamp(28px,4vw,48px)}
+.revs blockquote{margin:0;display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,50px);align-items:start;padding-top:clamp(26px,4vw,40px);border-top:1px solid var(--line)}
+.revs blockquote .mono{color:var(--blue);padding-top:8px}
+.revs blockquote q{font-size:clamp(1.3rem,2.8vw,2rem);line-height:1.34;font-weight:500;quotes:'“' '”';letter-spacing:-.005em}
+.revs blockquote cite{display:block;margin-top:14px;font-style:normal;color:var(--mut);font-size:13px}
+@media(max-width:640px){.revs blockquote{grid-template-columns:1fr;gap:12px}}
 
-/* ---- foot ---- */
-.foot{border-top:1px solid var(--line);padding:44px 0 120px;color:var(--mut);font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.foot a{color:var(--ink);border-bottom:1px solid var(--clay)}
+.cta{position:relative;overflow:hidden;color:var(--paper);border-radius:2px;margin-bottom:clamp(60px,8vw,110px)}
+.cta .bg img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.cta .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(15,15,15,.84),rgba(15,15,15,.5))}
+.cta .in{position:relative;z-index:2;padding:clamp(56px,9vw,120px) clamp(28px,5vw,72px);text-align:center}
+.cta h2{font-size:clamp(2.2rem,5.6vw,4.2rem);line-height:1.02;font-weight:700;margin-bottom:20px;text-transform:lowercase;letter-spacing:-.02em}
+.cta p{max-width:44ch;margin:0 auto 30px;color:#D9D5C9}
+.cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta .btns a{padding:15px 30px;border-radius:30px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.cta .btns .p{background:var(--paper);color:var(--ink)}.cta .btns .g{border:1px solid rgba(243,240,232,.5);color:var(--paper)}
 
-/* ---- unique minimal typographic sticky bar ---- */
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(22,22,22,.94);backdrop-filter:blur(8px);
-  color:var(--paper);display:flex;justify-content:center;gap:clamp(14px,4vw,44px);
-  padding:14px 18px calc(14px + env(safe-area-inset-bottom));font-size:12.5px;letter-spacing:.18em;text-transform:lowercase}
-.bar a{display:inline-flex;align-items:center;gap:7px;color:var(--paper);opacity:.82;transition:opacity .2s}
-.bar a:hover{opacity:1}
-.bar a b{font-weight:600;letter-spacing:.1em}
+.foot{border-top:1px solid var(--line);padding:40px 0 116px;color:var(--mut);font-size:13px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.foot a{color:var(--ink);border-bottom:1px solid var(--clay)}
+
+/* minimal ellipsis bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(20,20,20,.95);backdrop-filter:blur(8px);color:var(--paper);display:flex;justify-content:center;gap:clamp(16px,5vw,48px);padding:15px 18px calc(15px + env(safe-area-inset-bottom));font-size:12.5px;letter-spacing:.16em;text-transform:lowercase}
+.bar a{display:inline-flex;align-items:center;gap:7px;color:var(--paper);opacity:.82;transition:opacity .2s}.bar a:hover{opacity:1}.bar a b{font-weight:600}
 .bar .sep{opacity:.3}
-@media(max-width:520px){.bar{letter-spacing:.1em;font-size:12px}}
+@media(max-width:520px){.bar{letter-spacing:.08em}}
 </style>
 </head>
 <body>
+<div class="grain" aria-hidden="true"></div>
 
-<header class="top">
-  <span class="mk">pai yan noi</span>
-  <span class="r">★ 4.8 · Chiang Mai</span>
-</header>
-
-<section class="hero">
-  <div class="panel">
-    <div class="eye">Guest home · Wat Umong, Suthep</div>
-    <h1>pai yan<br>noi<span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span class="th">ไปยาลน้อย</span></h1>
-    <p class="sub">A small teak house with a garden, one lane from a forest temple. Run by two sisters, kept quiet on purpose.</p>
-    <div class="meta">
-      <span>★ <b>4.8</b> · 56 Google reviews</span>
-      <span><b>Soi Wat Umong</b>, Suthep</span>
-    </div>
-    <div class="cta">
-      <a class="p" href="tel:+66818475805">Call the house</a>
-      <a class="g" href="https://www.google.com/maps?cid=10865936240521596056" target="_blank" rel="noopener">Find us on the map</a>
+<header id="top">
+  <div class="bg clip on"><img src="photos/01.jpg" alt="Teak bungalow with blue window frames and a leafy garden at Pai Yan Noi"></div>
+  <div class="in stag">
+    <div class="kick mono"><span class="ln"></span>Guest home · Wat Umong, Suthep</div>
+    <h1>pai yan noi<span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="th">ไปยาลน้อย</span></h1>
+    <div class="foot">
+      <p>A small teak house with a garden, one lane from a forest temple. Run by two sisters, kept quiet on purpose.</p>
+      <div class="rate"><span class="mono" style="color:#AEC6D6">Google</span><br><b>4.8</b> <span style="opacity:.85">· 56 reviews</span></div>
     </div>
   </div>
-  <div class="shot"><img src="photos/01.jpg" alt="Teak bungalow with blue window frames and a leafy garden at Pai Yan Noi Guest Home"></div>
-</section>
+  <div class="scroll" aria-hidden="true">Scroll</div>
+</header>
+
+<div class="hd" id="hd">
+  <a class="mk" href="#top">pai yan noi</a>
+  <nav><a href="#house">The house</a><a href="#rooms">Rooms</a><a class="resv" href="#reserve">Reserve</a></nav>
+</div>
 
 <div class="wrap">
 
-  <section class="state">
-    <p class="rev">A small teak house<span class="u">,</span> and a forest temple next door<span class="th" style="font-size:.7em"> ฯ</span></p>
-  </section>
-
-  <section class="story">
-    <div class="rev">
-      <div class="k">The name</div>
-      <h2>ไปยาลน้อย — the little "and&nbsp;so&nbsp;on"</h2>
-      <p><span class="th">ไปยาลน้อย</span> is the Thai ellipsis mark — the little symbol that means <em>and so on…</em>. It's a fitting name for a house that keeps the list short: a clean room, a green garden, breakfast in the morning, and quiet you can actually hear.</p>
-      <p>The lane runs straight to <b>Wat Umong</b> — the 700-year-old forest temple with meditation tunnels and a lake of turtles under the trees. Nimman's cafés are a short ride the other way. Between them, not much happens here, which is the whole idea.</p>
-    </div>
-    <div class="rooms rev">
-      <figure><img src="photos/02.jpg" alt="Twin room with a warm accent wall at Pai Yan Noi"><figcaption>The rooms</figcaption></figure>
-      <figure><img src="photos/03.jpg" alt="Simple clean twin room with wooden doors"><figcaption>Kept simple</figcaption></figure>
+  <section class="intro" id="house">
+    <div class="grid">
+      <div class="col">
+        <div class="lab mono"><span class="ln"></span>The name</div>
+        <h2 class="rev">ไปยาลน้อย — the little <em>"and&nbsp;so&nbsp;on."</em></h2>
+      </div>
+      <div class="col rev">
+        <p><span class="th">ไปยาลน้อย</span> is the Thai ellipsis mark — the little symbol that means <em>and so on…</em> It's a fitting name for a house that keeps the list short: a clean room, a green garden, breakfast in the morning, and quiet you can actually hear.</p>
+        <p>Two sisters run it, and it shows — friendly, unhurried, nothing trying too hard. Book once, and you tend to remember it for years.</p>
+        <figure class="fig clip"><img src="photos/05.jpg" alt="Blue-framed window and tropical plants at Pai Yan Noi"><figcaption class="mono">The blue windows</figcaption></figure>
+      </div>
     </div>
   </section>
 
-  <section class="etc rev">
-    <div class="k">& everything else</div>
-    <p>Air-conditioning, a hot shower, <b>fast Wi-Fi</b>, breakfast, free parking, a garden with a resident chicken or two<span class="th"> ฯลฯ</span></p>
-    <p class="list" style="font-size:15px;margin-top:18px;max-width:52ch">The Thai <span class="th">ฯลฯ</span> means "etcetera" — the small comforts you'd expect, quietly taken care of, so there's nothing to think about but the trip.</p>
+  <section class="temple">
+    <div class="bg clip"><img src="photos/04.jpg" alt="A forest meditation-temple path near Pai Yan Noi"></div>
+    <div class="in">
+      <span class="mono">Next door</span>
+      <h2 class="rev">A 700-year-old forest temple, at the end of the lane</h2>
+      <p class="rev">The soi runs straight to <b>Wat Umong</b> — the old forest temple with meditation tunnels and a lake of turtles under the trees. Walk out in the morning, before the day gets loud, and you'll understand the address.</p>
+    </div>
   </section>
 
-  <section class="hosts">
-    <div class="k rev">The house</div>
-    <p class="lead rev">Two sisters run Pai Yan Noi, and it shows — friendly, unhurried, breakfast on the table every morning<span class="th" style="font-size:.7em"> …</span> guests keep writing the same three words: <em>felt like home</em>.</p>
-    <p class="note rev">Nothing here is trying too hard. A garden with a chicken or two, a dining room full of old, nostalgic bits and pieces, rooms that are simple and spotless. The kind of small, personal place you book once and remember for years.</p>
+  <section class="rooms" id="rooms">
+    <div class="lab mono"><span class="ln"></span>The rooms</div>
+    <div class="grid">
+      <figure class="clip"><img src="photos/02.jpg" alt="Twin room with a warm accent wall at Pai Yan Noi"><figcaption class="rev"><b>Warm &amp; simple</b><span>A twin room with a soft accent wall.</span></figcaption></figure>
+      <figure class="clip"><img src="photos/03.jpg" alt="Clean twin room with wooden doors at Pai Yan Noi"><figcaption class="rev"><b>Clean &amp; quiet</b><span>Kept spotless, kept peaceful.</span></figcaption></figure>
+      <figure class="clip"><img src="photos/01.jpg" alt="The teak bungalow and garden at Pai Yan Noi"><figcaption class="rev"><b>The garden</b><span>Teak, blue frames, a plant or two.</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="etc">
+    <div class="lab mono"><span class="ln"></span>&amp; everything else</div>
+    <h2 class="rev">Air-conditioning, a hot shower, <b>fast Wi-Fi</b>, breakfast, free parking, a garden with a resident chicken or two<span class="th"> ฯลฯ</span></h2>
+    <div class="grid stag">
+      <div class="c"><span class="mono">01</span><b>Breakfast</b><span>Every morning, homemade.</span></div>
+      <div class="c"><span class="mono">02</span><b>Air-con &amp; hot water</b><span>In every room.</span></div>
+      <div class="c"><span class="mono">03</span><b>Fast free Wi-Fi</b><span>Works in the garden too.</span></div>
+      <div class="c"><span class="mono">04</span><b>Free parking</b><span>Right on the quiet soi.</span></div>
+      <div class="c"><span class="mono">05</span><b>The garden</b><span>Plants, shade, a chicken or two.</span></div>
+      <div class="c"><span class="mono">06</span><b>Two kind hosts</b><span>Sisters who make it feel like home.</span></div>
+    </div>
+  </section>
+
+  <section class="sisters">
+    <figure class="fig clip"><img src="photos/02.jpg" alt="Inside a room at Pai Yan Noi"></figure>
+    <div>
+      <div class="lab mono"><span class="ln"></span>The house</div>
+      <h2 class="rev">Nothing here is trying too hard</h2>
+      <p class="rev">A dining room full of old, nostalgic bits and pieces. Rooms that are simple and spotless. A garden you can hear. It's the kind of small, personal place you find once and keep coming back to.</p>
+      <p class="rev">Guests keep writing the same three words: <em style="color:var(--blue)">felt like home</em><span class="th" style="color:var(--clay)"> …</span></p>
+    </div>
   </section>
 
   <section class="near">
-    <h2 class="rev">A quiet corner of Suthep</h2>
-    <div class="grid rev">
+    <h2 class="disp rev">A quiet corner of Suthep</h2>
+    <div class="grid stag">
       <div class="c"><b>60 m</b><span>Wat Umong forest temple</span></div>
       <div class="c"><b>8 min</b><span>Ride to Nimman</span></div>
       <div class="c"><b>5 min</b><span>Suthep cafés &amp; markets</span></div>
@@ -198,23 +235,35 @@ a{color:inherit;text-decoration:none}
   </section>
 
   <section class="revs">
-    <div class="top-row">
+    <div class="head">
       <h2 class="rev">What guests write</h2>
-      <span class="score rev">★ <b>4.8</b> from 56 Google reviews</span>
+      <div class="score"><span class="mono">4.8 ★ · 56 Google reviews</span></div>
     </div>
-    <div class="grid">
-      <blockquote class="rev"><div class="stars">★★★★★</div>“Full of rustic charm, with a beautiful garden and nostalgic touches in the dining area. The rooms are clean and housekeeping is excellent.”<cite>— David Toh</cite></blockquote>
-      <blockquote class="rev"><div class="stars">★★★★★</div>“A professional guesthouse with a very personal touch. We instantly felt at home — quiet and cozy.”<cite>— Google review</cite></blockquote>
-      <blockquote class="rev"><div class="stars">★★★★★</div>“Owned and run by two sisters, and everything was just fantastic.”<cite>— Google review</cite></blockquote>
+    <div class="list">
+      <blockquote class="rev"><span class="mono">Rustic charm</span><div><q>Full of rustic charm, with a beautiful garden and nostalgic touches in the dining area. The rooms are clean and housekeeping is excellent.</q><cite>David Toh</cite></div></blockquote>
+      <blockquote class="rev"><span class="mono">Felt at home</span><div><q>A professional guesthouse with a very personal touch. We instantly felt at home — quiet and cozy.</q><cite>Google review</cite></div></blockquote>
+      <blockquote class="rev"><span class="mono">Two sisters</span><div><q>Owned and run by two sisters, and everything was just fantastic.</q><cite>Google review</cite></div></blockquote>
     </div>
   </section>
 
-  <div class="foot">
-    <span>Pai Yan Noi Guest Home · 36/22 Moo 10, Soi Wat Umong, Suthep, Chiang Mai 50200</span>
-    <span>Private preview · <a href="https://www.facebook.com/paiyannoiguesthome" target="_blank" rel="noopener">Facebook</a></span>
-  </div>
-
 </div>
+
+<section class="cta" id="reserve">
+  <div class="bg clip"><img src="photos/04.jpg" alt="The forest near Pai Yan Noi"></div>
+  <div class="in">
+    <h2 class="rev">come for the temple.<br>stay for the quiet.</h2>
+    <p class="rev">Message or call the house — the sisters will hold you a room. Everything else, the garden takes care of.</p>
+    <div class="btns rev">
+      <a class="p" href="tel:+66818475805">Call the house</a>
+      <a class="g" href="https://www.facebook.com/paiyannoiguesthome" target="_blank" rel="noopener">Message on Facebook</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="foot">
+  <span>Pai Yan Noi Guest Home · ไปยาลน้อย · 36/22 Moo 10, Soi Wat Umong, Suthep, Chiang Mai 50200</span>
+  <span>Private preview · <a href="https://www.facebook.com/paiyannoiguesthome" target="_blank" rel="noopener">Facebook</a></span>
+</div></div>
 
 <nav class="bar" aria-label="Contact">
   <a href="tel:+66818475805"><b>call</b></a><span class="sep">·</span>
@@ -224,11 +273,11 @@ a{color:inherit;text-decoration:none}
 
 <script>
 (function(){
-  var els=[].slice.call(document.querySelectorAll('.rev'));
-  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return;}
-  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px'});
-  els.forEach(function(e){io.observe(e)});
-  setTimeout(function(){els.forEach(function(e){e.classList.add('on')})},1100);
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.rev,.clip,.stag').forEach(function(e){io.observe(e)});
+  setTimeout(function(){document.querySelectorAll('.rev,.clip,.stag').forEach(function(e){e.classList.add('on')})},1200);
+  var hd=document.getElementById('hd');
+  addEventListener('scroll',function(){hd.classList.toggle('solid',scrollY>window.innerHeight*0.85)},{passive:true});
 })();
 </script>
 </body>
