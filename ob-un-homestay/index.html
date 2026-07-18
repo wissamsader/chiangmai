@@ -157,22 +157,31 @@ header .scroll::after{content:"";width:1px;height:34px;background:currentColor;a
 .foot{border-top:1px solid var(--line);padding:40px 0 116px;color:var(--mut);font-size:13px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
 .foot a{color:var(--terra)}
 
-/* sticky bar — cream + rising-sun disc */
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:stretch;background:var(--cream);border-top:1px solid var(--line);box-shadow:0 -12px 32px -22px rgba(46,32,22,.5);padding-bottom:env(safe-area-inset-bottom)}
-.bar .sun{position:relative;width:56px;flex:0 0 56px;overflow:hidden}
-.bar .sun::before{content:"";position:absolute;left:50%;bottom:-26px;transform:translateX(-50%);width:52px;height:52px;border-radius:50%;background:radial-gradient(circle at 50% 40%,var(--honey),var(--terra));box-shadow:0 0 22px -2px rgba(224,162,78,.7)}
-.bar .btns{display:flex;flex:1}
-.bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:16px 8px;font-size:13.5px;font-weight:600;color:var(--ink);border-left:1px solid var(--line)}
-.bar a.call{background:var(--terra);color:var(--cream);border-left:none}
-.bar a svg{width:17px;height:17px}
-@media(max-width:420px){.bar a{font-size:12.5px;padding:15px 4px}.bar .sun{display:none}}
+/* sticky bar — floating warm "café" pill (bespoke, not a generic banner) */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;justify-content:center;padding:0 12px calc(12px + env(safe-area-inset-bottom));pointer-events:none}
+.bar .pill{pointer-events:auto;display:flex;align-items:center;gap:7px;width:100%;max-width:560px;
+  background:rgba(251,243,228,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(46,32,22,.1);border-radius:999px;padding:7px 8px 7px 17px;
+  box-shadow:0 18px 44px -16px rgba(46,32,22,.55),0 2px 10px -4px rgba(46,32,22,.28)}
+.bar .brand{display:flex;align-items:center;gap:10px;margin-right:auto;color:var(--ink)}
+.bar .brand .sun{width:27px;height:27px;border-radius:50%;flex:0 0 auto;
+  background:radial-gradient(circle at 40% 33%,var(--honey),var(--terra));box-shadow:0 0 15px -2px rgba(224,162,78,.75)}
+.bar .brand b{font-family:'Fraunces',serif;font-weight:600;font-size:16px;letter-spacing:.01em}
+.bar a{display:inline-flex;align-items:center;gap:7px;padding:11px 17px;border-radius:999px;font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap;transition:transform .2s,box-shadow .2s}
+.bar a:active{transform:scale(.96)}
+.bar a svg{width:16px;height:16px}
+.bar a.call{background:var(--terra);color:var(--cream);box-shadow:0 6px 16px -6px rgba(184,90,42,.6)}
+.bar a.book{background:#0a5ad6;color:#fff}
+.bar a.ghost{color:var(--ink2)}
+@media(max-width:560px){.bar .brand b{display:none}.bar a.ghost span{display:none}.bar a{padding:11px 14px}}
+@media(max-width:360px){.bar .brand{display:none}}
 </style>
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
 
 <header id="top">
-  <div class="bg clip on"><img src="photos/01.jpg" alt="Garden courtyard at Ob-Un Homestay, with lamp post, umbrella and teak house"></div>
+  <div class="bg clip on"><img src="photos/01.jpg" alt="The OON Café garden at Ob-Un Homestay, with white parasols and teak seating"></div>
   <div class="glow" aria-hidden="true"></div>
   <div class="in stag">
     <div class="kick mono"><span class="ln"></span>Homestay &amp; café · Suthep, Chiang Mai</div>
@@ -238,11 +247,11 @@ header .scroll::after{content:"";width:1px;height:34px;background:currentColor;a
   <section class="gal">
     <h2 class="disp rev">Around the house</h2>
     <div class="grid">
-      <figure class="a clip"><img src="photos/01.jpg" alt="Garden courtyard"></figure>
-      <figure class="b clip"><img src="photos/02.jpg" alt="OON Café exterior"></figure>
+      <figure class="a clip"><img src="photos/06.jpg" alt="OON Café lit with string lights at night"></figure>
+      <figure class="b clip"><img src="photos/02.jpg" alt="OON Café building and garden by day"></figure>
       <figure class="c clip"><img src="photos/04.jpg" alt="Cosy reading corner with a lamp"></figure>
-      <figure class="d clip"><img src="photos/03.jpg" alt="Teak room"></figure>
-      <figure class="e clip"><img src="photos/05.jpg" alt="Grilled Thai plate"></figure>
+      <figure class="d clip"><img src="photos/03.jpg" alt="Teak room at Ob-Un"></figure>
+      <figure class="e clip"><img src="photos/05.jpg" alt="Grilled Thai plate from OON Café"></figure>
     </div>
   </section>
 
@@ -280,7 +289,7 @@ header .scroll::after{content:"";width:1px;height:34px;background:currentColor;a
 </div>
 
 <section class="cta" id="reserve">
-  <div class="bg clip"><img src="photos/01.jpg" alt="The garden at Ob-Un Homestay"></div>
+  <div class="bg clip"><img src="photos/06.jpg" alt="OON Café at Ob-Un Homestay lit up at night"></div>
   <div class="in">
     <h2 class="disp rev">Come in.<br>Coffee's on.</h2>
     <p class="rev">Call and we'll answer — ask for a room, and ask for LINE while you're at it. Tap &amp; Nui will do the rest.</p>
@@ -298,11 +307,11 @@ header .scroll::after{content:"";width:1px;height:34px;background:currentColor;a
 </div></div>
 
 <nav class="bar" aria-label="Contact">
-  <div class="sun" aria-hidden="true"></div>
-  <div class="btns">
-    <a class="call" href="tel:+6653811680"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0 8 7 15 15 15l2-3-4-2-2 2c-3-1-6-4-7-7l2-2-2-4z" stroke-linejoin="round"/></svg>Call &amp; ask for LINE</a>
-    <a href="https://www.google.com/maps?cid=6542392519645339442" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Map</a>
-    <a href="https://www.facebook.com/61573069871352" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h2.7l.4-3H13V9.1c0-.9.3-1.5 1.6-1.5H16V5c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.4-3.8 3.9V11H7.5v3H10v8h3z"/></svg>Facebook</a>
+  <div class="pill">
+    <span class="brand"><span class="sun" aria-hidden="true"></span><b>Ob-Un</b></span>
+    <a class="call" href="tel:+6653811680"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 5c0 8 7 15 15 15l2-3-4-2-2 2c-3-1-6-4-7-7l2-2-2-4z" stroke-linejoin="round"/></svg>Call</a>
+    <a class="book" href="https://www.booking.com/hotel/th/oon-homestay.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 18V7a2 2 0 012-2h12a2 2 0 012 2v11M4 13h16M8 9h5"/></svg>Book</a>
+    <a class="ghost" href="https://www.google.com/maps?cid=6542392519645339442" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Map</span></a>
   </div>
 </nav>
 
